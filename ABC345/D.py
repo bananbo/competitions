@@ -22,7 +22,7 @@ for i in range(N):
 
 for h in range(1, H+1):
     for w in range(1, W+1):
-        for k in range(0, 1<<N): # 現在の使用したタイル
+        for k in range(0, 1<<N): # 現在、使用済みのタイル
             if dp[k][h][w] == 0:
                 continue
             for ka in range(0, 1<<N): # 追加したいタイル
